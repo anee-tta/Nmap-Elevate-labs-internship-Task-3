@@ -1,0 +1,33 @@
+Vulnerability:
+DNS Server Cache Snooping Remote Information Disclosure
+
+Mitigations:
+1.Disable non-recursive responses for external clients.
+2.Enable logging for unusual query patterns and set up alerts to detect cache-snooping attempts.
+3.Keep DNS server software up to date with vendor security releases that address snooping-related vulnerabilities
+
+
+Vulnerability:
+DHCP Server Detection
+
+Mitigations:
+1.Narrow the scope of available IP ranges and options to reduce information leakage to unauthorized devices.
+2.Disable UPnP and unnecessary services on DHCP servers
+3.Monitor for unusual DHCPDISCOVER/REQUEST activity from endpoints not on known subnets.
+
+Vulnerability:
+ICMP Timestamp Request Remote Date Disclosure
+
+Mitigations:
+1.Apply rate limits to ICMP to reduce disclosure risk while preserving basic network diagnostics.
+2. For network troubleshooting, use tools that don’t rely on timestamp responses or that can mask actual host time.
+3.Block or heavily restrict ICMP timestamp (type 13) from external networks. Allow only essential ICMP types.
+
+
+
+
+
+
+
+
+ 
